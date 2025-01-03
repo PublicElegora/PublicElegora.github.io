@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easter Egg</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <style>
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .text-section {
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .gif-section {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .gif-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
         .hidden-message {
-            display: none; /* Initially hidden */
+            display: none;
             margin-top: 20px;
             font-size: 1.2rem;
             color: #2E1F14;
@@ -33,12 +57,20 @@
 </head>
 <body>
     <div class="background">
-        <div class="center-box">
-            <h1>🎉 Congratulations! 🎉</h1>
-            <p>You found the secret Easter egg!</p>
-            <button class="reveal-button" onclick="showMessage()">Push this button and see what happens</button>
-            <p id="hidden-message" class="hidden-message">Surprise! You’ve unlocked a hidden message! 🎊</p>
-            <a href="home.html" class="terms-link" style="margin-top: 20px; display: block;">Back to Home</a>
+        <div class="content-wrapper">
+            <!-- Text Content -->
+            <div class="text-section">
+                <h1>🎉 Congratulations! 🎉</h1>
+                <p>You found the secret Easter egg!</p>
+                <button class="reveal-button" onclick="showMessage()">Push this button and see what happens</button>
+                <p id="hidden-message" class="hidden-message">Surprise! You’ve unlocked a hidden message! 🎊</p>
+                <a href="../home.html" class="terms-link" style="margin-top: 20px; display: block;">Back to Home</a>
+            </div>
+
+            <!-- GIF Content -->
+            <div class="gif-section">
+                <img src="../images/waitingEasterEgg.gif" alt="Easter Egg GIF">
+            </div>
         </div>
     </div>
 
