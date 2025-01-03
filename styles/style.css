@@ -1,1 +1,78 @@
-yo.
+/* styles/style.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.center-box h1 {
+    font-size: 2rem;
+    color: #4A3A70;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.center-box p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.center-box a {
+    color: #4A3A70;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.center-box a:hover {
+    text-decoration: underline;
+}
+
+.button-placeholder {
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: not-allowed;
+}
+
+.terms-link {
+    display: block;
+    margin-top: 2rem;
+    color: #4A3A70;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
