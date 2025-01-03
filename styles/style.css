@@ -40,11 +40,11 @@ body, html {
 .center-box p {
     font-size: 1rem;
     margin: 0.5rem 0;
-    color: #333;
+    color: #289;
 }
 
 .center-box a {
-    color: #4A3A70;
+    color: #F0E0C7;
     text-decoration: none;
     font-weight: bold;
 }
@@ -67,7 +67,7 @@ body, html {
 .terms-link {
     display: block;
     margin-top: 2rem;
-    color: #4A3A70;
+    color: #F0E0C7;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: bold;
