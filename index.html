@@ -3,82 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easter Egg</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <style>
-        .content-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .text-section {
-            max-width: 400px;
-            text-align: center;
-        }
-
-        .gif-section {
-            max-width: 400px;
-            width: 100%;
-        }
-
-        .gif-section img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .hidden-message {
-            display: none;
-            margin-top: 20px;
-            font-size: 1.2rem;
-            color: #2E1F14;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .reveal-button {
-            background-color: #4A3A70;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            margin-top: 2rem;
-        }
-
-        .reveal-button:hover {
-            background-color: #2E1F14;
-        }
-    </style>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div class="background">
-        <div class="content-wrapper">
-            <!-- Text Content -->
-            <div class="text-section">
-                <h1>🎉 Congratulations! 🎉</h1>
-                <p>You found the secret Easter egg!</p>
-                <button class="reveal-button" onclick="showMessage()">Push this button and see what happens</button>
-                <p id="hidden-message" class="hidden-message">Surprise! You’ve unlocked a hidden message! 🎊</p>
-                <a href="../home.html" class="terms-link" style="margin-top: 20px; display: block;">Back to Home</a>
-            </div>
-
-            <!-- GIF Content -->
-            <div class="gif-section">
-                <img src="../images/easter-egg.gif" alt="Easter Egg GIF">
-            </div>
+        <div class="center-box">
+            <h1>WELCOME</h1>
+            <p>For any enquiries or information, please contact</p>
+            <p><a href="mailto:commonDoReply@gmail.com">commonDoReply@gmail.com</a></p>
+            <button class="button-placeholder">You thought this was a button?</button>
         </div>
+        <div class="footer">
+            <a href="terms.html">Terms and Services</a>
+        </div>
+        <!-- Secret button -->
+        <button class="secret-button" onclick="location.href='/definitelyNotImportant/easterEgg.html'"></button>
     </div>
-
-    <script>
-        function showMessage() {
-            // Reveal the hidden message
-            document.getElementById('hidden-message').style.display = 'block';
-        }
-    </script>
 </body>
 </html>
