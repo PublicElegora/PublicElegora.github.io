@@ -5,7 +5,7 @@
       {
         "appID": "
 PQVYNYJFU7.com.elegora.common",
-        "paths": ["/test", "/event/*"]
+        "paths": ["/test/*", "/event/*"]
       }
     ]
   }
