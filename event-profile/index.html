@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>See This Event on Common</title>
+
+  <!-- Standard favicon (ICO format at root) -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <!-- Alternative PNG favicon (fallback) -->
+  <link rel="icon" type="image/png" sizes="200x200" href="../images/CommonIconLarge.png" />
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="32x32" href="../apple-touch-icon.png" />
+
+  <!-- Open Graph Tags (for link previews) -->
+  <meta property="og:title" content="See This Event on Common" />
+  <meta property="og:description" content="Discover amazing events on Common. iOS only for now—Android is coming soon!" />
+  <meta property="og:image" content="https://elegora.ca/images/CommonIconLarge.png" />
+  <meta property="og:url" content="https://elegora.ca/event/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card (optional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="See This Event on Common" />
+  <meta name="twitter:description" content="Discover amazing events on Common. iOS only for now—Android is coming soon!" />
+  <meta name="twitter:image" content="https://elegora.ca/images/CommonIconLarge.png" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      height: 100vh;
+      background: #fafafa;
+    }
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 40px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    a.btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007AFF; /* iOS Blue */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    a.btn:hover {
+      background: #005BB5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>See This Event on Common</h1>
+    <p>
+      We currently only have an iOS app—Android is coming soon!<br/>
+      If you already have the Common app installed, it should open automatically.
+    </p>
+    <p>
+      If you don't have it yet, please click below or wait to be redirected:
+    </p>
+    <a class="btn" href="https://apps.apple.com/app/PQVYNYJFU7.com.elegora.common">Go to the App Store</a>
+  </div>
+
+  <script>
+    // Give social media scrapers a moment to read our OG tags
+    // Then redirect to the App Store if the app didn't open via Universal Links
+    setTimeout(function() {
+      window.location.href = "https://apps.apple.com/app/PQVYNYJFU7.com.elegora.common";
+    }, 2000);
+  </script>
+</body>
+</html>
