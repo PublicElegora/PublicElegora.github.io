@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Common App</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="200x200" href="/images/CommonIconLarge.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Common App" />
+  <meta property="og:description" content="Download the Common app on the App Store. Android version coming soon." />
+  <meta property="og:image" content="https://elegora.ca/images/CommonIconLarge.png" />
+  <meta property="og:url" content="https://elegora.ca/app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Font: Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* Base resets */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      background-color: #F0E0C7; /* Light beige */
+      font-family: 'Lora', serif;
+      color: #2E1F14; /* Dark brown */
+    }
+
+    /* Centering container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+
+    /* App Store button */
+    .app-button {
+      margin-top: 2rem;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #2E1F14; /* Dark brown */
+      color: #F0E0C7; /* Light beige */
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .app-button:hover {
+      background-color: #4B3A29; /* Slightly lighter brown on hover */
+      transform: translateY(-2px);
+    }
+
+    .app-button:active {
+      transform: translateY(0);
+      background-color: #2E1F14;
+    }
+
+    /* Small footer or note (optional) */
+    .note {
+      margin-top: 3rem;
+      font-size: 0.875rem;
+      color: #4B3A29; /* Mid-tone brown */
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Check Out Our App</h1>
+    <p>Download it now on the App Store.</p>
+    <p>Android app coming soon.</p>
+    <a
+      href="https://apps.apple.com/app/your-app-id-here"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="app-button"
+      >Download on the App Store</a
+    >
+
+    <!-- Optional small note at the bottom -->
+    <div class="note">
+      © 2025 Common. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
