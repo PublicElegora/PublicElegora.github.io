@@ -41,23 +41,31 @@
       color: #2E1F14; /* Dark brown */
     }
 
-    /* Centering container */
+    /* Centering container with spaced sections */
     .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+
+    /* Site-wide title near the top */
+    .site-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      line-height: 1.2;
+    }
+
+    /* Main content area (centered vertically between title and footer) */
+    .main-content {
+      flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100%;
       padding: 0 1rem;
       text-align: center;
-    }
-
-    /* Site-wide title */
-    .site-title {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      line-height: 1.2;
     }
 
     h1 {
@@ -97,7 +105,7 @@
       background-color: #2E1F14;
     }
 
-    /* Contact info */
+    /* Contact info (in the middle section) */
     .contact-info {
       margin-top: 2rem;
       font-size: 1rem;
@@ -105,9 +113,9 @@
       line-height: 1.4;
     }
 
-    /* Small footer or note (optional) */
+    /* Footer/note near the bottom */
     .note {
-      margin-top: 3rem;
+      margin-bottom: 1rem;
       font-size: 0.875rem;
       color: #4B3A29; /* Mid-tone brown */
       opacity: 0.8;
@@ -117,27 +125,29 @@
 
 <body>
   <div class="container">
-    <!-- Site-wide title -->
+    <!-- Site-wide title at the very top -->
     <h1 class="site-title">Common: Local and Live</h1>
 
-    <!-- Existing heading -->
-    <h1>Check Out Our App</h1>
-    <p>Download it now on the App Store.</p>
-    <p>Android app coming soon.</p>
-    <a
-      href="https://apps.apple.com/ca/app/common-local-and-live/id6743640498"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="app-button"
-      >Download on the App Store</a
-    >
+    <!-- Main content (centered) -->
+    <div class="main-content">
+      <h1>Check Out Our App</h1>
+      <p>Download it now on the App Store.</p>
+      <p>Android app coming soon.</p>
+      <a
+        href="https://apps.apple.com/ca/app/common-local-and-live/id6743640498"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="app-button"
+        >Download on the App Store</a
+      >
 
-    <!-- New contact line -->
-    <div class="contact-info">
-      For any enquiries and information, email: <a href="mailto:commonDoReply@gmail.com">commonDoReply@gmail.com</a>
+      <div class="contact-info">
+        For any enquiries and information, email:
+        <a href="mailto:commonDoReply@gmail.com">commonDoReply@gmail.com</a>
+      </div>
     </div>
 
-    <!-- Optional small note at the bottom -->
+    <!-- Footer/note at the very bottom -->
     <div class="note">
       © 2025 Common. All rights reserved.
     </div>
