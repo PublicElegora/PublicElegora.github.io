@@ -6,7 +6,7 @@
   <title>Common</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/CommonIconLarge.png" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" type="image/png" sizes="200x200" href="/images/CommonIconLarge.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png" />
 
@@ -56,6 +56,7 @@
       margin-top: 1rem;
       line-height: 1.2;
       text-align: center;
+      padding: 0 1rem; /* horizontal padding for small screens */
     }
 
     /* Main content area (centered vertically between title and footer) */
@@ -112,6 +113,8 @@
       font-size: 0.875rem;
       color: #4B3A29; /* Mid-tone brown */
       opacity: 0.8;
+      padding: 0 1rem;
+      text-align: center;
     }
 
     /* Secret button styling so that it doesn’t shift layout */
@@ -126,27 +129,58 @@
       background: none;
       cursor: pointer;
     }
+
+    /* Responsive tweaks for smaller screens */
+    @media (max-width: 600px) {
+      .site-title {
+        font-size: 2rem;       /* slightly smaller on mobile */
+        margin-top: 1.5rem;    /* extra top spacing */
+      }
+      /* Hide explicit <br> if wrapping is fine */
+      .site-title br {
+        display: none;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .site-title {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+      }
+      /* Force two lines on very small screens */
+      .site-title br {
+        display: block;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <!-- Site-wide title at the very top -->
-    <h1 class="site-title">Common: Local and Live</h1>
+    <!-- Two-line title at the very top -->
+    <h1 class="site-title">
+      Common:<br />
+      Local and Live
+    </h1>
 
     <!-- Main content (centered) -->
     <div class="main-content">
-      <h1>Check Out Our App on the App Store</h1>
-      <p>We currently only have an iOS app—Android is coming soon!</p>
+      <h1>Oops! Page Not Found (404)</h1>
+      <p>We can’t find the page you’re looking for.</p>
       <p>If you already have the Common app installed, it should open automatically.</p>
-      <p>If you don't have it yet, please click below:</p>
+      <p>If not, click below to download or return to the homepage:</p>
       <a
+        class="app-button"
         href="https://apps.apple.com/ca/app/common-local-and-live/id6743640498"
         target="_blank"
         rel="noopener noreferrer"
-        class="app-button"
         >Download on the App Store</a
       >
+      <p style="margin-top: 1.5rem;">
+        <a href="/" style="color: #2E1F14; text-decoration: none; font-size: 1rem;">
+          ← Back to Home
+        </a>
+      </p>
     </div>
 
     <!-- Footer/note at the very bottom -->
@@ -154,7 +188,7 @@
       © 2025 Common. All rights reserved.
     </div>
 
-    <!-- Secret button (preserves your existing Easter-egg) -->
+    <!-- Secret button (if you still want the Easter-egg) -->
     <button
       class="secret-button"
       onclick="location.href='/DefinitelyNotImportant/easterEgg.html'"
