@@ -1,44 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Common</title>
 
   <!-- Favicon -->
-  
-  <!-- Standard favicon (recommended ICO format) -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <!-- Alternative PNG favicon (fallback) -->
-  <link rel="icon" type="image/png" sizes="200x200" href="/images/CommonIconLarge.png">
-  
-  <!-- Apple Touch Icons -->
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="200x200" href="/images/CommonIconLarge.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png" />
 
-  <!-- Open Graph Meta Tags for social media/link sharing -->
-  <meta property="og:title" content="Common">
-  <meta property="og:description" content="Common, Local and Live Events">
-  <meta property="og:image" content="https://elegora.ca/images/CommonIconLarge.png">
-  <meta property="og:url" content="https://elegora.ca">
-  <meta property="og:type" content="website">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Common" />
+  <meta property="og:description" content="Common, Local and Live Events" />
+  <meta property="og:image" content="https://elegora.ca/images/CommonIconLarge.png" />
+  <meta property="og:url" content="https://elegora.ca" />
+  <meta property="og:type" content="website" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles/style.css">
+  <!-- Google Font: Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* Base resets */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      background-color: #F0E0C7; /* Light beige */
+      font-family: 'Lora', serif;
+      color: #2E1F14; /* Dark brown */
+    }
+
+    /* Centering container with spaced sections */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+
+    /* Site-wide title near the top */
+    .site-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    /* Main content area (centered vertically between title and footer) */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+
+    /* App Store button */
+    .app-button {
+      margin-top: 2rem;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #2E1F14; /* Dark brown */
+      color: #F0E0C7; /* Light beige */
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .app-button:hover {
+      background-color: #4B3A29; /* Slightly lighter brown on hover */
+      transform: translateY(-2px);
+    }
+
+    .app-button:active {
+      transform: translateY(0);
+      background-color: #2E1F14;
+    }
+
+    /* Contact info (in the middle section) */
+    .contact-info {
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #2E1F14; /* Dark brown */
+      line-height: 1.4;
+    }
+
+    /* Make the email link the same dark-brown instead of blue */
+    .contact-info a {
+      color: #2E1F14;
+      text-decoration: none; /* remove underline if desired */
+    }
+
+    /* Footer/note near the bottom */
+    .note {
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+      color: #4B3A29; /* Mid-tone brown */
+      opacity: 0.8;
+    }
+
+    /* Secret button styling so that it doesn’t shift layout */
+    .secret-button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      width: 1px;
+      height: 1px;
+      opacity: 0; /* invisible but clickable */
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="background">
-    <div class="center-box">
-      <h1>Welcome to Common</h1>
-      <p>We show live and local events near you.</p>
-      <p>For any enquiries or information, please contact</p>
-      <p><a href="mailto:commonDoReply@gmail.com">commonDoReply@gmail.com</a></p>
+  <div class="container">
+    <!-- Site-wide title at the very top -->
+    <h1 class="site-title">Common: Local and Live</h1>
+
+    <!-- Main content (centered) -->
+    <div class="main-content">
+      <h1>Check Out Our App</h1>
+      <p>Download it now on the App Store.</p>
+      <p>Android app coming soon.</p>
+      <a
+        href="https://apps.apple.com/ca/app/common-local-and-live/id6743640498"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="app-button"
+        >Download on the App Store</a
+      >
+
+      <div class="contact-info">
+        For any enquiries and information, email:
+        <br />
+        <a href="mailto:commonDoReply@gmail.com">commonDoReply@gmail.com</a>
+      </div>
     </div>
-<!--     <div class="footer">
-      <a href="terms.html">Terms and Services</a>
-    </div> -->
-    <!-- Secret button -->
-    <button class="secret-button" onclick="location.href='/DefinitelyNotImportant/easterEgg.html'"></button>
+
+    <!-- Footer/note at the very bottom -->
+    <div class="note">
+      © 2025 Common. All rights reserved.
+    </div>
+
+    <!-- Secret button (preserves your existing Easter-egg) -->
+    <button
+      class="secret-button"
+      onclick="location.href='/DefinitelyNotImportant/easterEgg.html'"
+      aria-label="secret"
+    ></button>
   </div>
 </body>
 </html>
