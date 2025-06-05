@@ -56,6 +56,7 @@
       margin-top: 1rem;
       line-height: 1.2;
       text-align: center;
+      padding: 0 1rem; /* horizontal padding for small screens */
     }
 
     /* Main content area (centered vertically between title and footer) */
@@ -112,6 +113,7 @@
       font-size: 1rem;
       color: #2E1F14; /* Dark brown */
       line-height: 1.4;
+      padding: 0 1rem;
     }
 
     /* Make the email link the same dark-brown instead of blue */
@@ -126,6 +128,8 @@
       font-size: 0.875rem;
       color: #4B3A29; /* Mid-tone brown */
       opacity: 0.8;
+      padding: 0 1rem;
+      text-align: center;
     }
 
     /* Secret button styling so that it doesn’t shift layout */
@@ -140,13 +144,40 @@
       background: none;
       cursor: pointer;
     }
+
+    /* Responsive tweaks for smaller screens */
+    @media (max-width: 600px) {
+      .site-title {
+        font-size: 2rem;       /* slightly smaller on mobile */
+        margin-top: 1.5rem;    /* extra top spacing */
+      }
+
+      /* If the title is too wide, force line break */
+      .site-title br {
+        display: none;        /* hide explicit <br> on very small if it wraps automatically */
+      }
+    }
+
+    @media (max-width: 400px) {
+      .site-title {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+      }
+      /* On very small screens, force the two lines */
+      .site-title br {
+        display: block;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <!-- Site-wide title at the very top -->
-    <h1 class="site-title">Common: Local and Live</h1>
+    <h1 class="site-title">
+      Common:<br />
+      Local and Live
+    </h1>
 
     <!-- Main content (centered) -->
     <div class="main-content">
