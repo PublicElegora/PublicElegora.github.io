@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- TODO: Replace with your public site origin for canonical -->
+  <link rel="canonical" href="https://YOUR-DOMAIN/delete-account.html" />
+  <title>Request Account & Data Deletion — Common by Elegora</title>
+  <meta name="description" content="How to request deletion of your account and associated data for the Common app." />
+
+  <!-- Open Graph (nice preview if users share the link) -->
+  <meta property="og:title" content="Request Account & Data Deletion — Common by Elegora" />
+  <meta property="og:description" content="Steps to delete your Common account and what data is removed or retained." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN/delete-account.html" />
+
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --panel: #111319;
+      --text: #e8eaed;
+      --sub: #b2b8c2;
+      --accent: #22c55e; /* soft green */
+      --muted: #2a2f3a;
+      --link: #7dd3fc;
+      --danger: #ef4444;
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 20% -10%, #182133 0%, var(--bg) 60%);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 48px auto;
+      padding: 0 20px;
+    }
+    header {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid var(--muted);
+      border-radius: var(--radius);
+      padding: 28px 26px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+    }
+    .kicker {
+      color: var(--sub);
+      margin: 0 0 14px;
+    }
+    .card {
+      margin-top: 18px;
+      background: var(--panel);
+      border: 1px solid var(--muted);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+    }
+    h2 { margin: 0 0 12px; font-size: 20px; }
+    h3 { margin: 24px 0 8px; font-size: 17px; }
+    ul { margin: 10px 0 0 20px; }
+    li + li { margin-top: 6px; }
+    code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    a { color: var(--link); text-decoration: underline; }
+    .btn {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+      background: linear-gradient(180deg, #1f3a2a, #0f2e1e);
+      color: #eafff2;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.06s ease, filter 0.2s ease;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 6px 24px rgba(0,0,0,0.25);
+    }
+    .btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .btn-danger {
+      background: linear-gradient(180deg, #5a1818, #3a0f0f);
+      color: #ffecec;
+      border-color: #3b0d0d;
+    }
+    .pill {
+      display: inline-block; padding: 3px 10px; border-radius: 999px;
+      border: 1px solid var(--muted); background:#141823; color: var(--sub);
+      font-size: 12px; margin-left: 8px;
+    }
+    .note { color: var(--sub); }
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+    @media (min-width: 780px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    footer {
+      margin: 32px 0 80px;
+      color: var(--sub);
+      font-size: 14px;
+      text-align: center;
+    }
+    .hr { height: 1px; background: var(--muted); border: 0; margin: 22px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- TODO: If your Play Console shows a different name, update both the heading and the "Developer" line below -->
+      <h1>Delete your account — <span class="mono">Common</span></h1>
+      <p class="kicker">Developer: Elegora (as shown on our Google Play store listing)</p>
+
+      <!-- TODO: Replace with your real support email -->
+      <a class="btn btn-danger" href="mailto:support@YOUR-DOMAIN?subject=Account%20Deletion%20Request%20(Common)&body=Please%20delete%20my%20Common%20account%20and%20all%20associated%20personal%20data.%0A%0AMy%20account%20email%3A%20_____%0AMy%20phone%20(number%2C%20if%20used)%3A%20_____%0AMy%20User%20ID%20(visible%20in%20profile%20if%20available)%3A%20_____%0A%0AI%20understand%20this%20action%20is%20permanent.">
+        Request deletion via email
+      </a>
+      <span class="pill">fastest</span>
+      <p class="note" style="margin-top:10px;">If you can’t open email links on this device, write to <span class="mono">support@YOUR-DOMAIN</span> with subject “Account Deletion Request (Common)”.</p>
+    </header>
+
+    <section class="card">
+      <h2>How to request deletion</h2>
+      <ol>
+        <li>Email us at <span class="mono">support@YOUR-DOMAIN</span> from the same email you used to sign up.</li>
+        <li>Include your <strong>account email</strong>, <strong>phone number</strong> (if you provided one), and (if available) your in-app <strong>User ID</strong>.</li>
+        <li>We’ll reply to verify your request. Once verified, we start deletion immediately.</li>
+      </ol>
+      <p class="note">Tip: If you currently have access to the app, you can also request deletion from the in-app support entry (Profile → Help). If you don’t have access, email is fine.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>What gets deleted</h2>
+        <ul>
+          <li>Account &amp; profile (name, display name, bio, avatar/profile photo).</li>
+          <li>Credentials &amp; identifiers (email, phone, hashed auth identifiers).</li>
+          <li>Push notification tokens and device tokens.</li>
+          <li>Your created content in the consumer app: saved events, personal bookmarks/favorites, friend connections, comments/messages, call rooms/metadata you initiated.</li>
+          <li>Your creator/business data tied to the account (business profile, event drafts, non-approved event submissions).</li>
+          <li>Images and files you uploaded that are tied solely to your account.</li>
+          <li>Location data associated with your account (e.g., last known map region, preferences).</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>What may be retained (minimal)</h2>
+        <ul>
+          <li><strong>Security &amp; operational logs</strong> (e.g., server access/error logs) for up to <strong>90 days</strong> to detect abuse and ensure platform reliability.</li>
+          <li><strong>Backups</strong> that may contain your data until they automatically expire and are overwritten, typically within <strong>30 days</strong>.</li>
+          <li><strong>Legal/financial records</strong> (if any payments or tax documents exist on your account) for the period required by law (often up to <strong>7 years</strong>).</li>
+          <li><strong>Aggregate analytics</strong> that do not identify you (e.g., counts and statistics where individual records are irreversibly de-identified).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Timeline</h2>
+      <ul>
+        <li><strong>Start:</strong> Immediately after we verify the request belongs to you.</li>
+        <li><strong>Completion:</strong> Within <strong>7 days</strong> for active databases and storage.</li>
+        <li><strong>Backups &amp; logs:</strong> As noted above, backups typically purge within <strong>30 days</strong>; security logs within <strong>90 days</strong>.</li>
+      </ul>
+      <hr class="hr" />
+      <p class="note">
+        We use cascading deletes in our backend so that once your account is removed, associated personal data linked to it is also removed from our active systems.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Identity verification</h2>
+      <p>To protect accounts, we verify every deletion request. We may ask you to confirm:</p>
+      <ul>
+        <li>Access to the email address on file (reply verification), and/or</li>
+        <li>Recent sign-in details or non-sensitive account information (e.g., display name).</li>
+      </ul>
+      <p class="note">If you no longer have access to the sign-in email, contact us and we’ll provide alternate verification steps.</p>
+    </section>
+
+    <section class="card">
+      <h2>Content that involves other users</h2>
+      <p>
+        If your activity produced content that other users depend on (e.g., public event posts that became part of community listings), we remove personal identifiers and, where feasible, delete or anonymize the content. If any public image or post still identifies you after deletion, email us and we will remove it.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <!-- TODO: Replace with your real support email and postal address (optional) -->
+      <p>Email: <a href="mailto:support@YOUR-DOMAIN">support@YOUR-DOMAIN</a></p>
+      <p class="note">If you’re writing from a different email than the one on your account, mention the account email in your message so we can locate it.</p>
+    </section>
+
+    <footer>
+      <div>App: <span class="mono">Common</span> • Developer: Elegora</div>
+      <div>Last updated: <!-- Keep current --> <span class="mono">2025-09-02</span></div>
+      <div style="margin-top:6px;">
+        This page is linked from our Google Play store listing as our official instructions for requesting account and data deletion.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
