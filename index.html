@@ -12,7 +12,7 @@
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Common" />
-  <meta property="og:description" content="Common, Local and Live Events" />
+  <meta property="og:description" content="Discover local events" />
   <meta property="og:image" content="https://elegora.ca/images/CommonIconLarge.png" />
   <meta property="og:url" content="https://elegora.ca" />
   <meta property="og:type" content="website" />
@@ -20,152 +20,190 @@
   <!-- Google Font: Lora -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
-    /* Base resets */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    html,
-    body {
+    html, body {
       height: 100%;
-      background-color: #F0E0C7; /* Light beige */
+      background-color: #F0E0C7;
       font-family: 'Lora', serif;
-      color: #2E1F14; /* Dark brown */
+      color: #2E1F14;
     }
 
-    /* Centering container with spaced sections */
     .container {
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      height: 100%;
     }
 
-    /* Site-wide title near the top */
-    .site-title {
+    /* Header */
+    header {
+      padding: 2rem 2rem 1rem;
+      text-align: center;
+    }
+
+    .logo {
       font-size: 2.5rem;
       font-weight: 700;
-      margin-top: 1rem;
+      color: #2E1F14;
+      letter-spacing: -0.02em;
       line-height: 1.2;
-      text-align: center;
-      padding: 0 1rem; /* horizontal padding for small screens */
     }
 
-    /* Main content area (centered vertically between title and footer) */
-    .main-content {
+    /* Main content */
+    main {
       flex: 1;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
-      padding: 0 1rem;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .hero {
+      max-width: 600px;
       text-align: center;
     }
 
-    h1 {
-      font-size: 2rem;
+    .hero h1 {
+      font-size: 2.5rem;
       font-weight: 600;
-      margin-bottom: 1rem;
+      color: #2E1F14;
       line-height: 1.2;
+      margin-bottom: 1rem;
     }
 
-    p {
-      font-size: 1rem;
-      line-height: 1.5;
-      margin-bottom: 0.5rem;
+    .hero p {
+      font-size: 1.125rem;
+      color: #4B3A29;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
     }
 
-    /* App Store button */
+    /* App buttons */
+    .app-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     .app-button {
-      margin-top: 2rem;
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
       text-decoration: none;
-      background-color: #2E1F14; /* Dark brown */
-      color: #F0E0C7; /* Light beige */
-      padding: 0.75rem 1.5rem;
+      background-color: #E5D2B0;
+      color: #2E1F14;
+      padding: 0.875rem 1.75rem;
       font-size: 1rem;
       font-weight: 500;
-      border-radius: 8px;
-      transition: background-color 0.2s ease, transform 0.1s ease;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
     }
 
     .app-button:hover {
-      background-color: #4B3A29; /* Slightly lighter brown on hover */
+      background-color: #4B3A29;
+      color: #F0E0C7;
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(46, 31, 20, 0.15);
     }
 
     .app-button:active {
       transform: translateY(0);
-      background-color: #2E1F14;
     }
 
-    /* Contact info (in the middle section) */
-    .contact-info {
-      margin-top: 2rem;
-      font-size: 1rem;
-      color: #2E1F14; /* Dark brown */
-      line-height: 1.4;
-      padding: 0 1rem;
-    }
-
-    /* Make the email link the same dark-brown instead of blue */
-    .contact-info a {
-      color: #2E1F14;
-      text-decoration: none; /* remove underline if desired */
-    }
-
-    /* Footer/note near the bottom */
-    .note {
-      margin-bottom: 1rem;
-      font-size: 0.875rem;
-      color: #4B3A29; /* Mid-tone brown */
-      opacity: 0.8;
-      padding: 0 1rem;
+    /* Footer */
+    footer {
+      padding: 2rem;
       text-align: center;
+      border-top: 1px solid #E5D2B0;
     }
 
-    /* Secret button styling so that it doesn’t shift layout */
+    .contact {
+      font-size: 0.9375rem;
+      color: #4B3A29;
+      margin-bottom: 1rem;
+    }
+
+    .contact a {
+      color: #2E1F14;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .contact a:hover {
+      opacity: 0.7;
+    }
+
+    .copyright {
+      font-size: 0.875rem;
+      color: #8B7765;
+    }
+
+    /* Secret button */
     .secret-button {
-      position: absolute;
+      position: fixed;
       bottom: 1rem;
       right: 1rem;
       width: 1px;
       height: 1px;
-      opacity: 0; /* invisible but clickable */
+      opacity: 0;
       border: none;
       background: none;
       cursor: pointer;
     }
 
-    /* Responsive tweaks for smaller screens */
-    @media (max-width: 600px) {
-      .site-title {
-        font-size: 2rem;       /* slightly smaller on mobile */
-        margin-top: 1.5rem;    /* extra top spacing */
+    /* Responsive */
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 2rem;
       }
 
-      /* If the title is too wide, force line break */
-      .site-title br {
-        display: none;        /* hide explicit <br> on very small if it wraps automatically */
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .app-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      .app-button {
+        width: 100%;
+        justify-content: center;
       }
     }
 
-    @media (max-width: 400px) {
-      .site-title {
-        font-size: 1.8rem;
-        margin-top: 2rem;
+    @media (max-width: 480px) {
+      header {
+        padding: 1.5rem 1rem 0.5rem;
       }
-      /* On very small screens, force the two lines */
-      .site-title br {
-        display: block;
+
+      .logo {
+        font-size: 1.75rem;
+      }
+
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      main {
+        padding: 1.5rem 1rem;
       }
     }
   </style>
@@ -173,43 +211,43 @@
 
 <body>
   <div class="container">
-    <!-- Site-wide title at the very top -->
-    <h1 class="site-title">
-      Common:<br />
-      Local and Live
-    </h1>
+    <header>
+      <div class="logo">Common:<br/>Local and Live</div>
+    </header>
 
-    <!-- Main content (centered) -->
-    <div class="main-content">
-      <h1>Check Out Our App</h1>
-      <p>Download it now on the App Store.</p>
-      <p>Android app coming soon.</p>
-      <a
-        href="https://apps.apple.com/ca/app/common-local-and-live/id6743640498"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="app-button"
-        >Download on the App Store</a
-      >
-
-      <div class="contact-info">
-        For any enquiries and information, email:
-        <br />
-        <a href="mailto:commonDoReply@gmail.com">commonDoReply@gmail.com</a>
+    <main>
+      <div class="hero">
+        <h1>Bring Your Area to Life</h1>
+        <p>Showcasing simple and fun events nearby.</p>
+        
+        <div class="app-buttons">
+          <a href="https://apps.apple.com/ca/app/common-local-and-live/id6743640498" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="app-button">
+            Common on iOS
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.elegora.common&pcampaignid=web_share" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="app-button">
+            Common on Android
+          </a>
+        </div>
       </div>
-    </div>
+    </main>
 
-    <!-- Footer/note at the very bottom -->
-    <div class="note">
-      © 2025 Common. All rights reserved.
-    </div>
+    <footer>
+      <div class="contact">
+        Questions? <a href="mailto:commonDoReply@gmail.com">commonDoReply@gmail.com</a>
+      </div>
+      <div class="copyright">© 2025 Common. All rights reserved.</div>
+    </footer>
 
-    <!-- Secret button (preserves your existing Easter-egg) -->
-    <button
-      class="secret-button"
-      onclick="location.href='/DefinitelyNotImportant/easterEgg.html'"
-      aria-label="secret"
-    ></button>
+    <button class="secret-button" 
+            onclick="location.href='/DefinitelyNotImportant/easterEgg.html'" 
+            aria-label="secret">
+    </button>
   </div>
 </body>
 </html>
